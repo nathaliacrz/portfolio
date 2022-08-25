@@ -11,24 +11,24 @@ const Home = () => {
     const jobArray = ['D', 'e', 's', 'e', 'n', 'v', 'o', 'l', 'v', 'e', 'd', 'o', 'r', 'a', ' ', 'w', 'e', 'b', ';']
     const meChamoArray = ['m', 'e', ' ', 'c', 'h', 'a', 'm', 'o']
 
-   useEffect(() => {
+    useEffect(() => {
         const timer = setTimeout(() => {
             setLetterClass('text-animate-hover');
-        }, 4000);
+        }, 6000);
         return () => clearTimeout(timer);
-   }, []);
+    }, []);
 
     return (
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
-                   <span className={letterClass}>P</span>
-                   <span className={`${letterClass} _12`}>r</span>
-                   <span className={`${letterClass} _13`}>a</span>
-                   <span className={`${letterClass} _14`}>z</span>
-                   <span className={`${letterClass} _15`}>e</span>
-                   <span className={`${letterClass} _16`}>r</span>
-                   <span className={`${letterClass} _17`}>,</span>
+                    <span className={letterClass}>P</span>
+                    <span className={`${letterClass} _12`}>r</span>
+                    <span className={`${letterClass} _13`}>a</span>
+                    <span className={`${letterClass} _14`}>z</span>
+                    <span className={`${letterClass} _15`}>e</span>
+                    <span className={`${letterClass} _16`}>r</span>
+                    <span className={`${letterClass} _17`}>,</span>
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                         strArray={meChamoArray}
@@ -40,7 +40,8 @@ const Home = () => {
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                         strArray={jobArray}
-                        idx={35} /></h1>
+                        idx={35} />
+                </h1>
                 <h2>Desenvolvedora Full-Stack</h2>
                 <Link to='/contato' className='flat-button'>
                     Contato
