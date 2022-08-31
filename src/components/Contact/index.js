@@ -1,11 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/';
+import emailjs from '@emailjs/browser'
 import './index.scss'
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
+    const refForm = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm(
+            'service_8gc40fh',
+            'template_ryhlt4a',
+            refForm.current,
+            'L_aa4btcUKz3AsfUG'
+        ).then(
+            () => {
+                alert('Mensagem enviada com sucesso!!')
+                window.location.reload(false)
+            },
+            () => {
+                alert('Failed to send the message, please try again')
+            }
+        )
+    }
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,7 +49,7 @@ const Contact = () => {
                         Me identifico mais com a área de back-end, porém consigo atuar bem como full-stack. De qualquer maneira, se tiver alguma pergunta ou proposta, pode me mandar por e-mail utilizando o formulário abaixo!!
                     </p>
                     <div className='contact-form'>
-                        <form>
+                        <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input
