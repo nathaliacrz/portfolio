@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="sobre" element={<About />} />  
           <Route path="contato" element={<Contact />} />  
           <Route path="portfolio" element={<Portfolio />} />  
+          <Route path="dashboard" element={<Dashboard />} />  
         </Route>
 
       </Routes>
