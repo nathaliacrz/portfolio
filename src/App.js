@@ -2,7 +2,6 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import Sidebar from './components/Sidebar';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
@@ -11,7 +10,6 @@ import Dashboard from './components/Dashboard';
 function App() {
   return (
     <>
-      <Sidebar />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
