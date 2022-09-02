@@ -8,7 +8,7 @@ import Logo from './Logo';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['a', 't', 'h', 'a', 'l', 'i', 'a', '!', '!']
+    const nameArray = ['a', 't', 'h', 'a', 'l', 'i', 'a', '!']
     const jobArray = ['D', 'e', 's', 'e', 'n', 'v', 'o', 'l', 'v', 'e', 'd', 'o', 'r', 'a', ' ', 'w', 'e', 'b', ';']
     const meChamoArray = ['m', 'e', ' ', 'c', 'h', 'a', 'm', 'o']
 
@@ -44,7 +44,7 @@ const Home = () => {
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                         strArray={jobArray}
-                        idx={35} />
+                        idx={34} />
                 </h1>
                 <h2>Desenvolvedora Full-Stack</h2>
                 <Link to='/contato' className='flat-button'>
