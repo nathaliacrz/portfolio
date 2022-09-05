@@ -26,7 +26,7 @@ const Sidebar = () => {
                     activeclassname='active'
                     to='/'
                 >
-                    <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
+                    <FontAwesomeIcon icon={faHome} color='white' />
                 </NavLink>
 
                 <NavLink
@@ -36,7 +36,7 @@ const Sidebar = () => {
                     className='about-link'
                     to='/sobre'
                 >
-                    <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                    <FontAwesomeIcon icon={faUser} color='white' />
                 </NavLink>
 
                 <NavLink
@@ -46,7 +46,7 @@ const Sidebar = () => {
                     className='portfolio-link'
                     to='/portfolio'
                 >
-                    <FontAwesomeIcon icon={faBook} color='#4d4d4e' />
+                    <FontAwesomeIcon icon={faBook} color='white' />
                 </NavLink>
 
                 <NavLink
@@ -56,7 +56,7 @@ const Sidebar = () => {
                     className='contact-link'
                     to='/contato'
                 >
-                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+                    <FontAwesomeIcon icon={faEnvelope} color='white' />
                 </NavLink>
 
                 <FontAwesomeIcon
