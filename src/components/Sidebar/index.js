@@ -103,7 +103,7 @@ const Sidebar = () => {
             <FontAwesomeIcon
                 onClick={() => setShowNav(true)}
                 icon={faBars}
-                color='#d61d50'
+                color='#355e3b'
                 size='3x'
                 className='hamburguer-icon'
             />
